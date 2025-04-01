@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@theme
+{
+  --animate-blink: blink 0.3s 3 forwards;
+
+  @keyframes blink
+  {
+    0%, 90% {
+      background-color: black;
+    }
+    100% {
+      background-color: teal;
+    }
+  }
+}
